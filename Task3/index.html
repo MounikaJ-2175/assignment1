@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .box {
+      border: 1px solid #999;
+      background-color: #eee;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .email-box {
+      border: 1px solid #999;
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .email-box h2 {
+      margin-top: 0;
+    }
+
+    a {
+      text-decoration: underline; /* underlines the links */
+      color: blue;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p>Click any of the following links</p>
+    <a href="https://example.com" target="_blank">Opens in New</a> |
+    <a href="https://example.com" target="_self">Opens in Self</a> |
+    <a href="https://example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://example.com" target="_top">Opens in Body</a>
+  </div>
+
+  <div class="email-box">
+    <h2>Link to an Email Address</h2>
+    <p>To create a link that opens in the user's email program (to let them send a new email), use <code>mailto:</code> inside the attribute:</p>
+    <a href="mailto:someone@example.com">Send email</a>
+  </div>
+
+</body>
+</html>
